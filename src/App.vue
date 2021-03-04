@@ -1,28 +1,40 @@
+<!--definizione del template -->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="nav">
+      <NavBar :key="componentKey" />
+    </div>
+    <router-view />
+    <my-footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import dei componenti footer e NavBar 
+import NavBar from "./components/NavBar.vue";
+import MyFooter from "./components/MyFooter.vue";
 
+//definizione dei componenti footer e NavBar
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    NavBar,
+    "my-footer": MyFooter,
+  },
+  data() {
+    return {
+      componentKey: 0,
+    };
+  },
+  //metodo per refreshare il componente NavBar 
+  methods: {
+    forceRerender() {
+      this.componentKey += 1;
+    },
+  },
+  //metodo per acquisire il riferimento della root nella quale si trova l'applicazione
+  created() {
+    this.$root.$refs.App = this;
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

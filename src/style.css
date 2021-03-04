@@ -1,0 +1,311 @@
+body {
+    font-family: arial;
+    text-align: center;
+    background-color: #F0F0F0;
+    text-decoration: none !important;
+}
+h1 {
+    padding: 0;
+    margin-top: 0;
+    font-size: 2.5vw;
+}
+#app {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+#login {
+    border-radius: 20px;
+    width: 30%;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+}
+input{
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+}
+.input-group-text{
+    margin-top: 5%;
+    width: 10%;
+}
+.form-floating{
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+}
+.forgot{
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+    color: rgb(5, 149, 197);
+}
+.forgot:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.info{
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+    color: rgb(5, 149, 197);
+}
+.svgLog{
+    fill: rgb(53, 53, 53);
+}
+.btn{
+    width:100%;
+}
+.user-info svg{
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+.user-info{
+    display: inline;
+    width: 15%;
+    font-size: 1.2vw;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    float: right;
+}
+.create{
+    width: 10%;
+}
+.logout{
+    display: inline;
+    font-size: 1.2vw;
+    float: right;
+    margin-left: 63%;
+    width: 10%;
+}
+.accedi{
+    margin-left: 73%;    
+}
+.user-info:hover{
+    box-shadow: 0px 0px 30px 8px rgba(255,255,255,1);
+    transition: .4s;
+}
+.logout:hover{
+    box-shadow: 0px 0px 30px 8px rgba(255,255,255,1);
+    transition: .4s;
+}
+#secure {
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin-top: 100px;
+}
+.recover{
+    margin: auto;
+    margin-top: 100px;
+}
+.goBack{
+    width: 10%;
+}
+#register{
+    border-radius: 20px;
+    width: 40%;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    padding: 20px;
+}
+.register-btn{
+    width: 30%;
+    margin-bottom: 3%;
+}
+.register .input-group{
+    width: 90%;
+    margin:auto;
+}
+.alert-danger{
+    text-align: left;
+    width: 50%;
+}
+.alert-register{
+    width: 80%;
+    margin: auto;
+}
+.account-page{
+    margin: auto;
+    margin-top: 10%;
+}
+.api{
+    width: 80%;
+    margin: auto;
+}
+ul{
+    width: 80%;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+li{
+    width: 100%;
+    line-height: 2.5;
+}
+.info svg{
+    fill: rgba(147, 32, 42, 0.9);
+    margin: 2px;
+    margin-right: 15px;
+}
+.alert-danger li{
+    border-bottom: 1px solid rgba(147, 32, 42, 0.5);
+}
+.auth-error{
+    margin-top: 5%;
+}
+.error-box{
+    margin:auto;
+    width: 40%;
+}
+.err{
+    width: 40%;
+    float: left;
+    margin: 5%;
+    font-size: 1.2vw;
+}
+.fadeHeight-enter-active,
+.fadeHeight-leave-active {
+  transition: all 0.7s;
+  max-height: 100%;
+}
+.fadeHeight-enter,
+.fadeHeight-leave-to
+{
+  opacity: 0;
+  max-height: 0px;
+}
+.user-data{
+    text-align: justify;
+    font-size: 1.7vw;
+    width: 85%;
+    margin-left: 15%;
+}
+.left{
+    font-weight: bold;
+    display: inline;
+    float: left;
+    width: 15%;
+}
+.right{
+    display: inline;
+    float: left;
+    width: 30%;
+}
+.pagination{
+    width: 20%; 
+    margin: auto;
+    border-bottom: none;
+}
+.page-item{
+    width: 100%;
+    font-size: 1.25vw;
+}
+.page-item:hover{
+    cursor: pointer;
+}
+.home{
+    margin: auto;
+    margin-top: 7%; 
+    margin-bottom: 85px;
+}
+.booking-list{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.list-group-item{
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 5%;
+    padding: 10px;
+    padding-left: 3%;
+}
+.booking-title{
+    font-weight:bold;
+    font-size:1.25vw;
+}
+.booking-value{
+    font-size:1.05vw;
+}
+.disabled:hover{
+    cursor: auto;
+}
+.deactivated{
+    color:#6C779A;
+}
+.deactivated:hover{
+    cursor: default;
+    background-color: white;
+    color:#6C779A;
+}
+.container{
+    margin-top: 100px;
+    width: 70%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 50px;
+}
+.text-primary{
+    font-size: 1.2vw;
+}
+.spinner-border{
+    height: 1.2vw;
+    width: 1.2vw;
+    margin-bottom: 3px;
+}
+.pagination-text{
+    margin-top: 50px;
+}
+.show{
+    margin-right: 5%;
+    font-size: 10px;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+}
+.show:hover{
+    cursor: pointer;
+}
+.show:focus{
+    outline: none;
+}
+.infotable{
+    border-collapse: collapse;
+}
+.infoTable td{
+    width:50%;
+    text-align: left;
+    padding-left: 30px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.table tr{
+    vertical-align: middle;
+}
+.card{
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+}
+textarea{
+    width: 100%;
+    height: 125px;
+}
+.row{
+    margin-top: 50px;
+}
